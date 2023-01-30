@@ -1,0 +1,82 @@
+html,body {
+  height:100%;
+  margin:0;
+  overflow:hidden;
+  padding:0;
+  width:100%;
+}
+
+#main {
+  background-image:url("img/Background.png");
+  background-position:center;
+  background-size:cover;
+  height:100%;
+  overflow:hidden;
+  width:100%;
+  
+  opacity:0;
+  opacity: 1 \9;
+  -webkit-animation:fadeIn;
+  animation:fadeIn;
+
+  -webkit-animation-fill-mode:forwards;
+  animation-fill-mode:forwards;
+
+  -webkit-animation-duration:1s;
+  animation-duration:1s;
+  
+  -webkit-animation-delay: 0.25s;
+  animation-delay: 0.25s;
+}
+
+#layout {
+  bottom:0;
+  height:775px;
+  left:0;
+  margin:auto;
+  position:absolute;
+  right:0;
+  text-align:center;
+  top:0;
+  width:1000px;
+}
+
+#buttons {
+  bottom:100px;
+  height:200px;
+  position:absolute;
+  width:100%;
+}
+
+.button {
+  background-position:center;
+  background-repeat:no-repeat;
+  background-size:190px;
+  display:inline-block;
+  height:220px;
+  transition:background-size .2s ease;
+  width:200px;
+}
+
+.button:hover {background-size:200px}
+.button:active {background-size:180px}
+
+#forum {
+	background-image:url("img/wiki.png");
+}
+
+#vote {
+	background-image:url("img/vote.png");
+}
+
+#store {
+	background-image:url("img/store.png");
+}
+
+#bans {
+	background-image:url("img/discord.png");
+}
+
+/*Fade*/
+@-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
